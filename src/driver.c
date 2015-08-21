@@ -170,7 +170,7 @@ int main(int argc, char **argv)
     
     memcpy(path, cwd, cwd_len);
     path[cwd_len] = '/';
-    memcpy(path + cwd_len + 1, upd_path, upd_len);
+    memcpy(path + cwd_len + 1, upd_path, upd_len + 1);
     
     free(cwd);
     free(upd_path);
