@@ -283,7 +283,7 @@ void transform_fptr(void *in, void *out, int num_gen_args, void **args) {
       kitsune_log("transform_fptr: mapping %p -> %p", in_elem, lookup);
       transform_add_mapping(in_elem, lookup);
     } else {
-      kitsune_log("transform_fptr: could not find function corresponding to address %x\n", in_elem);
+      kitsune_log("transform_fptr: could not find function corresponding to address %p\n", in_elem);
       assert(0);
     }
   }
